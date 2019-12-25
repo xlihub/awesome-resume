@@ -17,10 +17,15 @@ export function handleChar(fullText, char) {
     fullText = fullText.replace(commentRegex, '<span class="comment">$1/</span>')
   } else if (char === ':') {
     fullText = fullText.replace(keyRegex, '<span class="key">$1</span>:')
-  } else if (char === '') {
-    fullText = fullText.replace(valueRegex, '<span class="value">$1</span>')
+  } else if (char === ';') {
+    console.log(fullText)
+    fullText = fullText.replace(valueRegex, '<span class="value">$1</span>;')
   } else if (char === '{') {
-    fullText = fullText.replace(selectorRegex, '<span class="selector">$1</span>{')
+    console.log(fullText)
+    fullText = fullText.replace(selectorRegex, '<span class="selector">$1</span><span class="object">{</span>')
+  } else if (char === '}') {
+    console.log(fullText)
+    fullText = fullText.replace(selectorRegex, '<span class="object">}</span>')
   } else if (char === 'x' && pxRegex.test(fullText.slice(-2))) {
     fullText = fullText.replace(pxRegex2, '<span class="value px">px</span>')
   } else {

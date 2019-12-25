@@ -1,10 +1,19 @@
 /**
  *
- * 你好。我叫黄轶。目前就职于 Zoom，任前端架构师一职。
+ * 你好。我叫李欣。
  *
  * 我喜欢研究一些前端有趣的交互。
  *
  * 要不来一场直播写代码？
+ *
+ * 整个直播预计将花费3分钟的时间
+ *
+ * 如果你急不可耐的想看最终的结果，可以点击页面下方的"跳过动画"
+ *
+ * 当然，你也可以随时点击"暂停"，然后去接杯水？喝口茶？
+ *
+ * 或者是详细看看我到底写了些什么
+ *
  */
 
 /**
@@ -70,12 +79,28 @@ pre:not(:empty) {
  * 那么，我们来把代码变的更加可读吧~
  */
 
-.comment       { color: #857F6B; font-style: italic; }
-.selector      { color: #E69F0F; }
-.selector .key { color: #64D5EA; }
-.key           { color: #64D5EA; }
-.value         { color: #BE84F2; }
-.value.px      { color: #F92772; }
+.comment       { 
+  color: #98C379; 
+  font-style: italic; 
+}
+.selector      { 
+  color: #E69F0F; 
+}
+.selector .key { 
+  color: #64D5EA; 
+}
+.object        { 
+  color: #FED600; 
+}
+.key           { 
+  color: #64D5EA; 
+}
+.value         { 
+  color: #CE9178; 
+}
+.value.px      { 
+  color: #F92772; 
+}
 
 /**
  * 现在我们有了一些进展。
