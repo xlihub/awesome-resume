@@ -1,7 +1,7 @@
 <template>
   <pre id="work-text" :class="workCls" v-show="show">
     <div v-if="preview" v-html="text"></div><div v-else>
-      <div class="md" v-html="mdText" style="-webkit-transform: rotateY(0deg) rotateZ(0deg);margin-top: 0px;"></div>
+      <div class="text" v-html="workText"></div>
       <div class="md" v-html="mdText"></div>
     </div>
   </pre>

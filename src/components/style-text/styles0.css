@@ -51,11 +51,14 @@ pre, a {
  */
 
 pre:not(:empty) {
+  box-sizing:border-box;
+  -moz-box-sizing:border-box; /* Firefox */
+  -webkit-box-sizing:border-box; /* Safari */
   overflow: auto;
   background: rgb(48, 48, 48);
   border: 1px solid #ccc;
   max-height: 44.6%;
-  width: 49%;
+  width: 50%;
   font-size: 14px;
   font-family: monospace;
   padding: 10px 10px 20px;
@@ -69,7 +72,7 @@ pre:not(:empty) {
  */
 
 #style-text {
-  -webkit-transform: translateX(95%);
+  -webkit-transform: translateX(100%);
   position: absolute;
 }
 
@@ -113,7 +116,7 @@ body {
 }
 
 #style-text {
-  -webkit-transform: translateX(98.5%) rotateY(-10deg);
+  -webkit-transform: translateX(100%) rotateY(-10deg);
   -webkit-transform-origin: right;
   max-height: 94.5%;
 }
