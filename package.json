@@ -2,7 +2,7 @@
   "name": "resume",
   "version": "1.0.0",
   "description": "A Vue.js project",
-  "author": "ustbhuangyi <280309453@qq.com>",
+  "author": "x.li <lxpanpan@126.com>",
   "private": true,
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
